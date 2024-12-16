@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3eae3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  display: flex;
+  width: 800px;
+  height: 600px;
+  border-radius: 30px;
+}
+
+.imagem-responsiva {
+  background-image: url(/images/image-product-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.card-info {
+  padding: 5%;
+  width: 50%;
+}
+
+.card-title {
+  font-family: "Fraunces", serif;
+  color: #1a2127;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.card-text-1 {
+  color: #767887;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.card-text-2 {
+  color: #767887;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.card-prices {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+
+#card-price-1 {
+  font-family: "Fraunces", serif;
+  color: #418169;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+#card-price-2 {
+  color: #767887;
+  text-decoration: line-through;
+  font-size: 15px;
+}
+
+.card-button {
+  color: white;
+  background-color: #418169;
+  width: 100%;
+  margin: 40px 0 10px 0;
+  padding: 15px 70px 20px 70px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.card-button:hover {
+  background-color: #3a6e5d;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.attribution{
+    font-size: 18px;
+    text-align: center;
+    color: #767887;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 100%;
+    margin-top: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 90%;
+    height: 700px;
+  }
+
+  .imagem-responsiva {
+    background-image: url(/images/image-product-mobile.jpg);
+    width: 100%;
+    height: 30%;
+    background-position: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+  }
+
+  .card-info {
+    width: 100%;
+    height: 50%;
+    padding: 10%;
+  }
+
+  .card-title {
+    font-size: 33px;
+  }
+
+  .card-text-1 {
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+
+  .card-text-2 {
+    font-size: 14px;
+  }
+
+  .card-prices {
+    gap: 15px;
+  }
+
+  #card-price-1 {
+    font-size: 40px;
+  }
+
+  #card-price-2 {
+    font-size: 12px;
+  }
+
+  .card-button {
+    padding: 10px 50px 15px 50px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+    .attribution{
+        font-size: 14px;
+    }
+}
